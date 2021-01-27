@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Journal</title>
+    <link rel="stylesheet" href="./styles/main.css">
+
+</head>
+<body>
+    <header>
+        <img src="https://www.freelogodesign.org/file/app/client/thumb/02aa0806-4e92-48f1-a836-f7fd6ea14ed4_200x200.png?1610041175070" alt="Daily Journal Logo">
+        <h1>Peyton's Daily Journal</h1>
+    </header>
+    
+    <main id="container">
+        <section class="containerLeft">
+        <h2>Daily Journal</h2>
+        <form class="containerLeft__entryForm" id="entryForm" action="">
+            <fieldset class="fieldSet">
+                <label for="journalDate">Date of Entry</label>
+                <input type="date" name="journalDate" id="journalDate">
+            </fieldset>
+            <fieldset class="fieldSet">
+                <label for="journalConcepts">Concepts covered</label>
+                <input type="text" name="journalConcepts" id="journalConcepts">
+            </fieldset>
+            <fieldset class="fieldSet">
+                <label for="journalEntry">Journal entry</label>
+                <textarea rows=10 cols= 70 name="journalEntry" id="journalEntry"></textarea>
+            </fieldset>
+            <fieldset class="fieldSet">
+                <label for="journalMood">Current mood</label>
+                <select name="journalMood" id="journalMood">
+                    <option value="amazing">Amazing</option>
+                    <option value="good">Good</option>
+                    <option value="bad">Bad</option>
+                    <option value="terrible">Absolutely terrible</option>
+                </select>
+            </fieldset>
+            <button onclick="myFunction()">Submit</button>
+
+        </form>
+        </section>
+        <article class="pastEntries">
+            <h2>Past Entries</h2>
+            <section id="entryLog">
+                
+                <!-- Delete/Edit Buttons here -->
+            </section>
+
+        </article>
+    </main>
+    <footer class="footer">
+
+    </footer>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
