@@ -1,0 +1,8 @@
+.logo {
+    max-width: 10em;
+}
+
+.fieldSet {
+    display: flex;
+    flex-direction: column;
+}
