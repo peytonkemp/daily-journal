@@ -7,7 +7,7 @@
  */
 
 const database = {
-    "entries": [
+    entries: [
         {
             id: 1,
             date: "07/24/2025",

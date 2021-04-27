@@ -1,7 +1,10 @@
 import { DailyJournal } from "./dailyjournal.js"
 
-const container = document.querySelector("#entries")
+const container = document.querySelector(".entries")
 
-const render = () => {
-    container.innerHTML = DailyJournal()
-}
+const HTML = `
+    <h2>Entries</h2>
+    ${DailyJournal()}
+`
+
+container.innerHTML = HTML
