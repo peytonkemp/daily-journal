@@ -37,6 +37,5 @@ const database = {
     raw data in the format that you want
 */
 export const getJournalEntries = () => {
-    const copyOfData = [...database.entries]
-    return copyOfData
+    return [...database.entries]
 }

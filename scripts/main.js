@@ -1,10 +1,13 @@
 import { DailyJournal } from "./dailyjournal.js"
+import { getJournalEntries } from "./database.js"
+import { JournalForm } from "./JournalForm.js";
 
 const container = document.querySelector(".entries")
+const formContainer = document.getElementById("entryForm")
 
-const HTML = `
-    <h2>Entries</h2>
-    ${DailyJournal()}
-`
-
-container.innerHTML = HTML
+const render = () => {
+    getJournalEntries()
+    container.innerHTML = DailyJournal()
+    formContainer.innerHTML = JournalForm()
+}
+render()
